@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title></title>
+		<script src="https://unpkg.com/vue"></script>
+  </head>
+  <body>
+		<div id="app">
+
+      <form>
+        <label>Name</label><input v-model="name" type="text" name="" value=""> <br>
+        <label>HP</label><input v-model="hp" type="number" name="" value=""> <br>
+        <label>Strength</label><input v-model="attributes.strength" type="number" name="" value=""> <br>
+        <label>dexterity</label><input v-model="attributes.dexterity" type="number" name="" value=""> <br>
+        <label>constitution</label><input v-model="attributes.constitution" type="number" name="" value=""> <br>
+        <label>wisdom</label><input v-model="attributes.wisdom" type="number" name="" value=""> <br>
+        <label>intelligence</label><input v-model="attributes.intelligence" type="number" name="" value=""> <br>
+        <label>charisma</label><input v-model="attributes.charisma" type="number" name="" value=""> <br>
+        <label>Power points</label><input v-model="power_points" type="number" name="" value=""> <br>
+        <label>Level</label><input v-model="level" type="number" name="" value=""> <br>
+        <label>AC</label><input v-model="ac" type="number" name="" value=""> <br>
+      </form>
+
+			<sheet>
+			  <p>Name: {{ name }}</p>
+				<p>HP: {{ hp }}</p>
+				<ul>
+				  <li v-for="(value, key) in attributes">
+				    {{ key }}: {{ value }}
+				  </li>
+				</ul>
+				<ul>
+				  <li v-for="word in words">
+				    Word: {{ word }}
+				  </li>
+				</ul>
+				<p>PP: {{ power_points }}</p>
+				<p>Lvl: {{ level }}</p>
+        <p>AC: {{ ac }}</p>
+        <ul>
+				  <li v-for="fact in facts">
+				    Fact: {{ fact }}
+				  </li>
+				</ul>
+
+			</sheet>
+
+		</div>
+
+
+		<script src="main.js">
+		</script>
+</html>

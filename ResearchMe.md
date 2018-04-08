@@ -1,0 +1,13 @@
+# Commands I don't know
+ - export
+ - default
+ - let
+ - const
+ - filter
+ - Symbol
+ - require (Webpack?)
+ - [Vue Stuff]
+   - $emit
+	 - Listeners
+	 - ...this.$listeners
+	 - prop
